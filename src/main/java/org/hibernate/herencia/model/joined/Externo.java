@@ -1,7 +1,10 @@
 package org.hibernate.herencia.model.joined;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
+
 @Entity
+@PrimaryKeyJoinColumn(name="employeeId")
 public class Externo extends Employee {
 
 	private String empresa;
